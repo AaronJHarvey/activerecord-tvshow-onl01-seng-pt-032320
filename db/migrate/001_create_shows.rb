@@ -1,11 +1,10 @@
-class CreateShows < ActiveRecord::Migration[5.2]
+class CreateShows < ActiveRecord::migration[5.2]
   def change
-    create_table :shows do |t|
-      #primary key of :id is created for us!
-      t.string :name
-      t.string :day
-      t.string :network
-      t.integer :rating
+    create_table :shows do |s|
+      s.string :name 
+      s.string :network
+      s.string :day 
+      s.integer :rating
     end
-  end
+  end 
 end
